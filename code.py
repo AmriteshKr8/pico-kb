@@ -6,10 +6,12 @@ import usb_hid
 from adafruit_hid.keycode import Keycode
 import digitalio
 
+#init CAPS-LOCK led
 led = digitalio.DigitalInOut(board.GP25)
 led.direction = digitalio.Direction.OUTPUT
 led.value = False
 
+#init space_bar
 space = digitalio.DigitalInOut(board.GP19)
 space.direction = digitalio.Direction.INPUT
 space.pull = digitalio.Pull.UP
